@@ -14,12 +14,12 @@ def build_graph(weight_type="miles"):
 
     # Common edges, each with their weights
     edges = [
-        ("Chicago", "Mclain", 40), ("Chicago", "Aurora", 60), ("Chicago", "Parker", 50),
-        ("Mclain", "Aurora", 10), ("Mclain", "Smallville", 70),
-        ("Aurora", "Parker", 20), ("Aurora", "Smallville", 55), ("Aurora", "Farmer", 40),
-        ("Parker", "Farmer", 50),
-        ("Smallville", "Farmer", 10), ("Smallville", "Bayview", 60),
-        ("Farmer", "Bayview", 80),
+        ("Origin", "A", 40), ("Origin", "B", 60), ("Origin", "C", 50),
+        ("A", "B", 10), ("A", "D", 70),
+        ("B", "C", 20), ("B", "D", 55), ("B", "E", 40),
+        ("C", "E", 50),
+        ("D", "E", 10), ("D", "Destination", 60),
+        ("E", "Destination", 80),
     ]
 
     # Add weights based on type (miles, cost, or time)
